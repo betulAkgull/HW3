@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">homework3</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="namesurname">Name-Surname</string>
+    <string name="submit">Submit</string>
+    <string name="address">Address</string>
+    <string name="email">E-Mail</string>
+</resources>
