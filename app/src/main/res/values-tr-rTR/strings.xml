@@ -5,4 +5,7 @@
     <string name="submit">Gönder</string>
     <string name="address">Adres</string>
     <string name="email">E-posta</string>
+    <string name="major">Bölüm</string>
+    <string name="gpa">Ortalama</string>
+    <string name="university">Üniversite</string>
 </resources>
