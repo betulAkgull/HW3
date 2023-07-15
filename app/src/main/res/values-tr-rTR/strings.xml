@@ -8,4 +8,7 @@
     <string name="major">Bölüm</string>
     <string name="gpa">Ortalama</string>
     <string name="university">Üniversite</string>
+    <string name="tap_again_to_go_homepage">Anasayfa için tekrar tıklayınız.</string>
+    <string name="enter_your_name">İsminizi giriniz</string>
+    <string name="fill_required_field">Gerekli alanları boş bırakmayınız.</string>
 </resources>

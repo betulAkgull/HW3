@@ -45,8 +45,9 @@
         android:layout_marginStart="@dimen/_20ssp"
         android:layout_marginTop="@dimen/_20sdp"
         android:layout_marginEnd="@dimen/_20ssp"
-        android:inputType="numberDecimal"
         android:hint="@string/gpa"
+        android:inputType="numberDecimal"
+        android:maxLength="1"
         android:textSize="@dimen/_20ssp"></EditText>
 
     <Button

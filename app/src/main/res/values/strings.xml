@@ -8,4 +8,7 @@
     <string name="major">Major</string>
     <string name="gpa">GPA</string>
     <string name="university">University</string>
+    <string name="tap_again_to_go_homepage">Tap again to go Homepage</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="fill_required_field">Fill required field.</string>
 </resources>

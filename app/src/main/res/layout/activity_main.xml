@@ -16,6 +16,7 @@
         android:ems="10"
         android:hint="@string/namesurname"
         android:inputType="text"
+        android:textSize="@dimen/_20ssp"
         tools:layout_editor_absoluteX="99dp"
         tools:layout_editor_absoluteY="235dp" />
 
@@ -25,6 +26,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:textSize="@dimen/_20ssp"
-        android:text="@string/submit"></Button>
+        android:text="@string/submit"
+        android:textSize="@dimen/_20ssp"></Button>
 </LinearLayout>

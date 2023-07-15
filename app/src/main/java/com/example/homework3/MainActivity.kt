@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import com.example.homework3.databinding.ActivityMainBinding
 
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -18,13 +19,17 @@ class MainActivity : AppCompatActivity() {
 
         with(binding) {
             btnSubmit.setOnClickListener {
-                val intent = Intent(this@MainActivity,SecondActivity::class.java)
+                val intent = Intent(this@MainActivity, SecondActivity::class.java)
                 if (!etNameSurname.text.isNullOrEmpty()) {
                     intent.putExtra("namesurname", etNameSurname.text.toString())
                     startActivity(intent)
                 } else {
                     etNameSurname.requestFocus()
-                    Toast.makeText(this@MainActivity, "Enter your name", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        this@MainActivity,
+                        getString(R.string.enter_your_name),
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
 
             }
@@ -32,12 +37,12 @@ class MainActivity : AppCompatActivity() {
 
 
 
-       onBackPressedDispatcher.addCallback(this,object : OnBackPressedCallback(true){
-           override fun handleOnBackPressed() {
-               System.exit(0)
-           }
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                System.exit(0)
+            }
 
-       })
+        })
     }
 
 

@@ -34,7 +34,11 @@ class ThirdActivity : AppCompatActivity() {
                     intent.putExtra("info", userInfo)
                     startActivity(intent)
                 } else {
-                    Toast.makeText(this@ThirdActivity, "Fill required field.", Toast.LENGTH_SHORT)
+                    Toast.makeText(
+                        this@ThirdActivity,
+                        getString(R.string.fill_required_field),
+                        Toast.LENGTH_SHORT
+                    )
                         .show()
                 }
             }

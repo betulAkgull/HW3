@@ -108,6 +108,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="@dimen/_20ssp"
+        android:inputType="textEmailAddress"
         android:text="@string/email"
         android:textSize="@dimen/_20ssp"
         app:layout_constraintBottom_toTopOf="@+id/textView2"

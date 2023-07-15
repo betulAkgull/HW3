@@ -17,20 +17,27 @@ class SecondActivity : AppCompatActivity() {
 
         val nameSurname = intent.getStringExtra("namesurname")
 
-        with(binding){
+        with(binding) {
             tvNamesurname.text = nameSurname.toString()
             btnSubmit.setOnClickListener {
-                if(!etAddress.text.isNullOrEmpty() && !etEmail.text.isNullOrEmpty()){
-                    val user = User(nameSurname.toString(),etEmail.text.toString(),etAddress.text.toString())
-                    val intent = Intent(this@SecondActivity,ThirdActivity::class.java)
-                    intent.putExtra("user",user)
+                if (!etAddress.text.isNullOrEmpty() && !etEmail.text.isNullOrEmpty()) {
+                    val user = User(
+                        nameSurname.toString(),
+                        etEmail.text.toString(),
+                        etAddress.text.toString()
+                    )
+                    val intent = Intent(this@SecondActivity, ThirdActivity::class.java)
+                    intent.putExtra("user", user)
                     startActivity(intent)
-                }else{
-                    Toast.makeText(this@SecondActivity, "Fill required field.", Toast.LENGTH_SHORT).show()
+                } else {
+                    Toast.makeText(
+                        this@SecondActivity,
+                        getString(R.string.fill_required_field),
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             }
         }
-
 
 
     }
